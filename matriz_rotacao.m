@@ -18,7 +18,6 @@ function y = matriz_rotacao(caracter, x)
 
     isNumero = false;
     if ~isa(x, 'sym')
-        x = sym(x);
         isNumero = true;
     end
 

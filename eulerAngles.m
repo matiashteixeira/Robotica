@@ -24,9 +24,9 @@ function y = eulerAngles(caso, matriz)
             
             y(1) = atan2d(sqrt(1-matriz(3,3)^2), matriz(3,3));
             y(2) = atan2d(matriz(2,3), matriz(1,3));
-            y(3) = atan2d(-matriz(3,2), matriz(3,1));
+            y(3) = atan2d(matriz(3,2), -matriz(3,1));
 
-            fprintf('Theta = %.2f \nPhi = %.2f \nPsi = %.2f \n', y(1), y(2), y(3));
+            fprintf('Alpha = %.2f \nPhi = %.2f \nPsi = %.2f \n', y(1), y(2), y(3));
     
         otherwise
             disp('Os casos disponíveis são 1(r33 = 1) e 2 (r33 <1)');

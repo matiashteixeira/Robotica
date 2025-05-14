@@ -22,17 +22,7 @@ function matriz = transformacao_homogenea(caracter, theta, x, y, z)
     isNumero = false;
     % Definir as variáveis como simbólicas se não forem numéricas
     if ~isa(theta, 'sym')
-        theta = sym(theta);
         isNumero = true;
-    end
-    if ~isa(x, 'sym')
-        x = sym(x);
-    end
-    if ~isa(y, 'sym')
-        y = sym(y);
-    end
-    if ~isa(z, 'sym')
-        z = sym(z);
     end
 
     switch caracter
